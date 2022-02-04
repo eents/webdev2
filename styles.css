@@ -45,7 +45,7 @@ body {
 }
 
 #flavor-text-1{
-    font-family: marioKartDS;
+    font-family: 'marioKartDS';
     color: white;
     text-align: center;
     font-size: 25px;
