@@ -10,6 +10,16 @@
     src: url(/fonts/39smooth.ttf);
 }
 
+@font-face {
+    font-family: marioKartDS;
+    src: url(/fonts/Mario-Kart-DS.ttf)
+}
+
+@font-face {
+    font-family: murrx;
+    src: url(/fonts/Murrx.ttf)
+}
+
 
 /* STYLING FOR INDEX.HTML */
 
@@ -22,67 +32,108 @@ body {
     background-color: black;
 }
 
-#header-text {
-    text-decoration: underline;
+#flavor-text-1{
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    right: 150px;
+    bottom: 10px;
+}
+
+#about-text{
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    letter-spacing: .5px;
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    width: 320px;
+    height: 320px;
+    z-index: -10;
+    font-family: marioKartDS;
+    color: black;
+    background-color: rgba(209, 24, 49);
+    vertical-align: middle;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#about-text:hover{
+    opacity: 100;
+}
+
+#header-text{
     letter-spacing: 4px;
-    color: white;
-    font-family: dotFont;
+    line-height: 51px;
+    font-size: 45px;
+    width: 54%;
+    color: black;
+    font-family: murrx;
     position: absolute;
     top: 90px;
-    left: 50%;
-    transform: translate(-50%);
+    left: 30px;
+    transition: 1s ease-in-out;
 }
 
-#bio-text {
-    text-align: center;
-    max-width: 50%;
-    line-height: 20px;
-    letter-spacing: 1px;
+#header-text:hover{
     color: white;
-    font-family: smooth;
-    position: absolute;
-    top: 490px;
-    left: 50%;
-    transform: translate(-50%);
 }
 
-#profile-img {
+#hero-image-1{
     position: absolute;
-    top: 150px;
-    width: 33%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#section1-title {
-    text-decoration: underline;
-    letter-spacing: 4px;
-    color: white;
-    font-family: dotFont;
-    position: absolute;
-    top: 640px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#img-1 {
-    position: absolute;
-    top: 700px;
     right: 150px;
-    width: 50%;
+    height: 46%;
+    z-index: -10;
 }
 
-#img-2 {
+#hero-image-2 {
+    position: absolute;
+    bottom: 0px;
+    left: 240px;
+    height: 54%;
+    z-index: -20;
+}
+
+#seraph-element-1{
     position: absolute;
     border: none;
-    top: 780px;
-    right: 450px;
+    top: 90px;
+    right: 420px;
     width: 23%;
+    min-width: 23%;
 }
 
-#img-3 {
+#seraph-element-2{
     position: absolute;
-    top: 994px;
-    left: 240px;
-    width: 27%;
+    border: none;
+    top: 90px;
+    right: 420px;
+    width: 23%;
+    min-width: 23%;
+    animation-name: seraph-element-2-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes seraph-element-2-animation{
+    0%{
+       transform: translate(4px, 2px);
+    }
+    25%{
+        transform: translate(-4px, 2px);
+    }
+    50%{
+       transform: translate(4px, 1px);
+    }
+    75%{
+        transform: translate(-3px, -2px);
+    }
+    100%{
+       transform: translate(1px, 3px);
+    }
 }
