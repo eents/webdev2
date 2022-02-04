@@ -5,20 +5,84 @@
     src: url(/fonts/Dot.ttf);
 }
 
+@font-face {
+    font-family: smooth;
+    src: url(/fonts/39smooth.ttf);
+}
+
 
 /* STYLING FOR INDEX.HTML */
 
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
     background-color: black;
 }
 
-h1 {
+#header-text {
+    text-decoration: underline;
+    letter-spacing: 4px;
     color: white;
     font-family: dotFont;
     position: absolute;
-    top: 130px;
+    top: 90px;
     left: 50%;
     transform: translate(-50%);
+}
+
+#bio-text {
+    text-align: center;
+    max-width: 50%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: smooth;
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#profile-img {
+    position: absolute;
+    top: 150px;
+    width: 33%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#section1-title {
+    text-decoration: underline;
+    letter-spacing: 4px;
+    color: white;
+    font-family: dotFont;
+    position: absolute;
+    top: 640px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#img-1 {
+    position: absolute;
+    top: 700px;
+    right: 150px;
+    width: 50%;
+}
+
+#img-2 {
+    position: absolute;
+    border: none;
+    top: 780px;
+    right: 450px;
+    width: 23%;
+}
+
+#img-3 {
+    position: absolute;
+    top: 994px;
+    left: 240px;
+    width: 27%;
 }
