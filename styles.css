@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: dotFont;
-    src: url(/fonts/Dot.ttf);
+    src: url(./fonts/Dot.ttf);
 }
 
 @font-face {
     font-family: smooth;
-    src: url(/fonts/39smooth.ttf);
+    src: url(./fonts/39smooth.ttf);
 }
 
 @font-face {
     font-family: marioKartDS;
-    src: url(/fonts/Mario-Kart-DS.ttf)
+    src: url(./fonts/Mario-Kart-DS.ttf)
 }
 
 @font-face {
     font-family: murrx;
-    src: url(/fonts/Murrx.ttf)
+    src: url(./fonts/Murrx.ttf)
 }
 
 
