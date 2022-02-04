@@ -32,13 +32,76 @@ body {
     background-color: black;
 }
 
-#flavor-text-1{
+#profile-image{
     position: absolute;
-    background-color: white;
+    width: 200px;
+    right: 155px;
+    top: 130px;
+    opacity: 0;
+}
+
+#profile-image:hover{
+    opacity: 85%;
+}
+
+#flavor-text-1{
+    font-family: marioKartDS;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    background-color: black;
+    letter-spacing: .5px;
     height: 50px;
-    width: 350px;
-    right: 150px;
+    width: 550px;
+    right: 80px;
+    bottom: 130px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#flavor-text-1:hover{
+    opacity: 100;
+}
+
+#flavor-text-2{
+    font-family: marioKartDS;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    background-color: black;
+    letter-spacing: .5px;
+    height: 50px;
+    width: 550px;
+    right: 80px;
+    bottom: 70px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#flavor-text-2:hover{
+    opacity: 100;
+}
+
+#flavor-text-3{
+    font-family: marioKartDS;
+    color: rgba(209, 24, 49);
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    background-color: black;
+    letter-spacing: .5px;
+    height: 50px;
+    width: 550px;
+    right: 80px;
     bottom: 10px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#flavor-text-3:hover{
+    opacity: 100;
 }
 
 #about-text{
@@ -65,15 +128,16 @@ body {
 }
 
 #header-text{
+    text-align: center;
     letter-spacing: 4px;
     line-height: 51px;
     font-size: 45px;
-    width: 54%;
+    width: 400px;
     color: black;
-    font-family: murrx;
+    font-family: dotFont;
     position: absolute;
     top: 90px;
-    left: 30px;
+    left: 40px;
     transition: 1s ease-in-out;
 }
 
