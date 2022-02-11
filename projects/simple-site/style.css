@@ -1,5 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Volkhov:wght@400;700&display=swap');
+
+:root {
+    --font-family-primary-font: Volkhov, serif;
+    --font-family-secondary-font: Rubik, sans-serif;
+    --color-primary-color: blue;
+    --color-secondary-color: white;
+    --color-accent-color: magenta;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+/* HEADER SECTION */
+
+header {
+    background-color: var(--color-secondary-color);
+}
+
+#title-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#title-text {
+    color: var(--color-primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    font-family: var(--font-family-primary-font);
+}
+
+#nav-bar {
+    max-width: 50%;
+    margin: 0 auto;
+    transform: translateX(-.5rem);
+    padding-bottom: .5rem;
+}
+
+li {
+    display: inline;
+}
+
+.links {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: var(--color-accent-color);
+    font-weight: bold;
+    padding: .25rem 0;
+    font-family: var(--font-family-secondary-font);
+    padding: 0 .5rem;
+}
+
+/* BODY SECTION */
+
+body {
+    background-color: var(--color-primary-color)
+}
+
+#hero-section-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#hero-section-title {
+    color: var(--color-secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--font-family-secondary-font);
+    padding: 3rem 0 2rem 0;
+}
+
+#hero-section-description {
+    color: var(--color-secondary-color);
+    font-size: 1rem;
+    font-family: var(--font-family-secondary-font);
+    padding-bottom: 4rem;
+}
+
+.section-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: var(--color-secondary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: var(--font-family-primary-font);
+    padding-bottom: .25rem;
+}
+
+.section-description {
+    color: var(--color-secondary-color);
+    font-size: 1rem;
+    font-family: var(--font-family-secondary-font);
+    padding-bottom: 3rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    bottom: 0;
+    background-color: var(--color-secondary-color);
+}
+
+#footer-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#footer-text {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font-family-secondary-font);
+    color: var(--color-primary-color);
+    padding: .5rem 0;
 }
