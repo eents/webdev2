@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Volkhov:wght@400;700&display=swap');
+
+:root {
+    --ff-primary: Volkhov, serif;
+    --ff-secondary: Rubik, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,29 +12,40 @@
     outline: 1px solid cyan;
 }
 
+
 /* HERO SECTION */
 
 #hero-section {
+    color: white;
+    font-family: var(--ff-primary);
     min-height: 100vh;
+    width: 100%;
     background-image: url(./vmup-c.gif);
     background-position: center;
     background-repeat: repeat;
     background-size: 250px;
 }
 
-#hero-text-title {
-    color: white;
-}
-
-#hero-text-subtitle {
-    color: white;
+#hero-text-wrapper {
+    
 }
 
 
 /* HEADER SECTION */
 
 header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ff-secondary);
+}
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
 }
 
 #header-text-title {
@@ -42,24 +60,26 @@ header {
 /* MAIN SECTION */
 
 main {
-
+    width: 100vw;
 }
 
 .content-title {
-
+    font-family: var(--ff-primary);
 }
 
 .content-description {
-
+    font-family: var(--ff-secondary);
 }
 
 .content-image {
-
+    display: block;
+    margin: 0 auto;
+    max-width: 90vw;
 }
 
 
 /* FOOTER SECTION */
 
 footer {
-    
+    font-family: var(--ff-secondary);
 }
