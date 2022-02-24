@@ -3,5 +3,63 @@
     padding: 0;
     box-sizing: border-box;
     outline: 1px solid cyan;
-    background-color: black;
+}
+
+/* HERO SECTION */
+
+#hero-section {
+    min-height: 100vh;
+    background-image: url(./vmup-c.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+#hero-text-title {
+    color: white;
+}
+
+#hero-text-subtitle {
+    color: white;
+}
+
+
+/* HEADER SECTION */
+
+header {
+
+}
+
+#header-text-title {
+
+}
+
+.header-link {
+
+}
+
+
+/* MAIN SECTION */
+
+main {
+
+}
+
+.content-title {
+
+}
+
+.content-description {
+
+}
+
+.content-image {
+
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    
 }
