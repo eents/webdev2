@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid cyan;
+    /* outline: 1px solid cyan; */
 }
 
 
@@ -26,8 +26,13 @@
     background-size: 250px;
 }
 
+#hero-section h1 {
+    font-size: clamp(2.5rem, 3rem, 3.5rem);
+}
+
 #hero-text-wrapper {
-    
+    padding-left: clamp(5vw, 10vw, 15vw);
+    padding-top: clamp(20vh, 25vh, 30vh);
 }
 
 
@@ -65,16 +70,22 @@ main {
 
 .content-title {
     font-family: var(--ff-primary);
+    display: block;
+    margin: 0 auto;
+    max-width: clamp(66vw, 75vw, 90vw);
 }
 
 .content-description {
     font-family: var(--ff-secondary);
+    display: block;
+    margin: 0 auto;
+    max-width: clamp(66vw, 75vw, 90vw);
 }
 
 .content-image {
     display: block;
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: clamp(66vw, 75vw, 90vw);
 }
 
 
@@ -82,4 +93,6 @@ main {
 
 footer {
     font-family: var(--ff-secondary);
+    display: block;
+    margin: 0 auto;
 }
