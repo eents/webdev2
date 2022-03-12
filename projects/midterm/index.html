@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>midterm</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     </section>
 
     <header>
-        <a href="#"><img src="./lib/images/rg-logo.png" alt="red ginger logo image"></a>
+        <a href="#"><img src="./lib/images/rg-logo.png" alt="red ginger logo image" id="logo-img"></a>
         <nav>
             <ul>
                 <a href="#"><li id="home-link" href="#">HOME</li></a>
@@ -25,7 +27,26 @@
                 <a href="#"><li href="#">CONTACT</li></a>
             </ul>
         </nav>
+        <div id="mobile-menu-button">
+            <p>MENU</p>
+            <img src="./lib/images/hamburger-menu-icon.png" alt="expand menu icon" id="hamburger-menu-icon">
+        </div>
+        <div id="close-mobile-menu-button">
+            <p>CLOSE</p>
+            <img src="./lib/images/x-icon.png" alt="close menu icon" id="x-icon">
+        </div>
+
     </header>
+
+    <div id="mobile-menu">
+        <ul>
+                <a href="#"><li >HOME</li></a>
+                <a href="#"><li >MENUS</li></a>
+                <a href="#"><li >PHOTOS</li></a>
+                <a href="#"><li >ORDER ONLINE</li></a>
+                <a href="#"><li >CONTACT</li></a>
+        </ul>
+    </div>
 
     <section id="hero">
         <div id="hero-text">
